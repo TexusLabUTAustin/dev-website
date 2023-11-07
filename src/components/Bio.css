@@ -1,0 +1,82 @@
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+.title {
+  width: 30%;
+  background-color: #fff; /* Background color for titles */
+  padding: 10px;
+}
+
+.title h2 {
+  font-size: 2rem;
+  font-family: "opensans-bold";
+  text-transform: uppercase;
+  text-decoration: underline #0085cc; /* Change this to the style you want */
+  text-underline-offset: 3px;
+}
+
+.education,
+.work,
+.honors{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "librebaskerville-italic";
+  margin: 20px;
+}
+
+
+.publications {
+    width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "librebaskerville-italic";
+  color: grey;
+  margin: 20px;
+  
+}
+
+.publication-item p{
+    font-size: 1.2rem;
+
+}
+
+.education-item,
+.work-item,
+.honor-item
+{
+  margin-bottom: 20px; /* Spacing between education/work/honors/publications items */
+  padding: 10px;
+  font-size: 1rem;
+}
+.education-item p{
+    font-size: 1rem;
+}
+
+.work-item p{
+    font-size: 1.1rem;
+}
+
+.honor-item p{
+    font-size: 1.1rem;
+}
+
+.education-item:not(:last-child),
+.work-item:not(:last-child),
+.honor-item:not(:last-child),
+.publication-item:not(:last-child) {
+  border-bottom: 1px solid grey;
+}
