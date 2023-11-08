@@ -2,51 +2,57 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
-  const [isHidden, setIsHidden] = useState(false);
-  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
-
-  const handleScroll = () => {
-    const currentScrollPos = window.scrollY;
-
-    if (currentScrollPos > prevScrollPos) {
-      setIsHidden(false); // Scroll down, hide the navbar
-    } else {
-      setIsHidden(false); // Scroll up, show the navbar
-    }
-
-    setPrevScrollPos(currentScrollPos);
-  };
+  const [isHidden, setIsHidden] = useState(true); // Start with the Navbar hidden
 
   useEffect(() => {
+    let prevScrollPos = window.pageYOffset;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setIsHidden(currentScrollPos > prevScrollPos);
+      prevScrollPos = currentScrollPos;
+    };
+
+    const handleMouseEnter = () => {
+      setIsHidden(false); // Show the Navbar when the mouse enters the top area
+    };
+
+    const handleMouseLeave = () => {
+      setIsHidden(true); // Hide the Navbar when the mouse leaves the top area
+    };
+
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('mouseenter', handleMouseEnter);
+    window.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('mouseenter', handleMouseEnter);
+      window.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []);
 
   const scrollToSection = (sectionId) => {
-  console.log(`Scrolling to section with id: ${sectionId}`);
-  const section = document.getElementById(sectionId);
+    const section = document.getElementById(sectionId);
 
-  if (section) {
-    // Calculate the offset position 100 pixels above the section
-    const offsetPosition = section.offsetTop - 50;
-    console.log(`Found section with id: ${sectionId}`);
+    if (section) {
+      const offsetPosition = section.offsetTop;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
 
-    // Scroll to the offset position with smooth behavior
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth',
-    });
-  }
-};
+  const openNewsLink = () => {
+    window.open('https://texuslab.org/news', '_blank');
+  };
 
   return (
     <nav className={isHidden ? 'hidden' : ''}>
       <ul>
         <li>
-          <button onClick={() => scrollToSection('home')}>Home</button>
+          <button onClick={() => scrollToSection('top')}>Home</button>
         </li>
         <li>
           <button onClick={() => scrollToSection('education')}>Education</button>
@@ -59,6 +65,9 @@ const Navbar = () => {
         </li>
         <li>
           <button onClick={() => scrollToSection('publications')}>Publications</button>
+        </li>
+        <li>
+          <button onClick={openNewsLink}>News</button>
         </li>
       </ul>
     </nav>

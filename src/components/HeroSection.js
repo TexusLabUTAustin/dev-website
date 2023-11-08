@@ -24,7 +24,7 @@ const HeroSection = () => {
       <div className="overlay">
 
       </div>
-      <div className="hero-content">
+      <div className="hero-content" id="top">
         <div className="hero-text">
           <h1>{data.name}</h1>
           <p>{data.occupation}</p>
