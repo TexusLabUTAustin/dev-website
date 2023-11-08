@@ -38,7 +38,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img src={process.env.PUBLIC_URL + "/images/dev1.jpg"} alt="Your Image" />
+          <img src={process.env.PUBLIC_URL + "/images/Dev1.jpg"} alt="Your Image" />
         </div>
       </div>
     </section>
