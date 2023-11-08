@@ -12,6 +12,7 @@ nav {
 nav.hidden {
   transform: translateY(-100%);
   opacity: 0;
+  transition: transform 0.3s ease-in-out;
   pointer-events: none;
 }
 

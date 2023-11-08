@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
-  const [isHidden, setIsHidden] = useState(true); // Start with the Navbar hidden
+  const [isHidden, setIsHidden] = useState(false); // Start with the Navbar hidden
 
   useEffect(() => {
     let prevScrollPos = window.pageYOffset;
 
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
+      console.log(currentScrollPos, prevScrollPos)
       setIsHidden(currentScrollPos > prevScrollPos);
       prevScrollPos = currentScrollPos;
     };
