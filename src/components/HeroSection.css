@@ -47,13 +47,13 @@ position: absolute;
   z-index: 2;
 }
 
-h1 {
+h2 {
   font-size: 5rem;
   margin-bottom: 20px;
   font-family: "opensans-bold";
 }
 
-p {
+ p {
   font-size: 1.8rem;
   font-family: "librebaskerville-regular";
 }
@@ -70,4 +70,41 @@ img {
   height: 100vh; /* Set height to 100% to maintain aspect ratio */
   object-fit: cover; /* Maintain aspect ratio and cover the container */
   width: auto; /* Allow width to adjust automatically */
+}
+
+@media (max-width: 768px) {
+  .hero-section{
+    height: auto;
+  }
+
+  .overlay{
+    display: none;
+  }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1; /* Move the image to the top for mobile version */
+  }
+  .hero-image img{
+    height: 50vh;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    color: black;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  .custom-linkedin-icon {
+    padding-left: 20px;
+  }
 }

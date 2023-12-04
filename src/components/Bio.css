@@ -1,21 +1,22 @@
 .bio {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around; /* Change this to adjust the space between sections */
 }
 
 .section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
+  width: 48%; /* Adjust the width of each section as needed */
   border-bottom: 2px solid black;
+  margin-bottom: 0px; /* Adjust the space between sections */
+  margin: 20px;
+  
 }
 
 .title {
-  width: 30%;
   background-color: #fff; /* Background color for titles */
   padding: 10px;
+  color: black;
 }
 
 .title h2 {
@@ -24,54 +25,54 @@
   text-transform: uppercase;
   text-decoration: underline #0085cc; /* Change this to the style you want */
   text-underline-offset: 3px;
+  color: black;
 }
 
 .education,
 .work,
-.honors{
-  width: 70%;
+.honors,
+.publications {
   display: flex;
   flex-direction: column;
   text-align: left;
   font-family: "librebaskerville-italic";
   margin: 20px;
+  color: black;
 }
-
 
 .publications {
-    width: 70%;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  font-family: "librebaskerville-italic";
   color: grey;
-  margin: 20px;
-  
 }
 
-.publication-item p{
-    font-size: 1.2rem;
-
+.publication-item p {
+  font-size: 1.2rem;
+  color: black;
 }
 
 .education-item,
 .work-item,
-.honor-item
-{
-  margin-bottom: 20px; /* Spacing between education/work/honors/publications items */
-  padding: 10px;
+.honor-item,
+.publication-item {
+  margin-bottom: 0px; /* Spacing between education/work/honors/publications items */
+  padding: 0px;
   font-size: 1rem;
-}
-.education-item p{
-    font-size: 1rem;
+  color: black;
 }
 
-.work-item p{
-    font-size: 1.1rem;
+.education-item p {
+  font-size: 1rem;
+  color: black;
 }
 
-.honor-item p{
-    font-size: 1.1rem;
+.work-item p {
+  font-size: 1.1rem;
+  color: black;
+}
+
+.honor-item p,
+.publication-item p {
+  font-size: 1.1rem;
+  color: black;
 }
 
 .education-item:not(:last-child),
@@ -79,4 +80,29 @@
 .honor-item:not(:last-child),
 .publication-item:not(:last-child) {
   border-bottom: 1px solid grey;
+}
+
+
+@media (max-width: 768px) {
+  .bio {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+    align-items: center;
+  }
+
+  .section {
+    width: 100%; /* Make sections occupy full width on smaller screens */
+  }
+
+  .title h2 {
+    text-decoration: underline; /* Remove color from text-decoration for better visibility */
+  }
+
+  .education,
+  .work,
+  .honors,
+  .publications {
+    margin: 10px; /* Adjust margin for better spacing on smaller screens */
+  }
+
+  /* Add any other specific styles needed for mobile view */
 }

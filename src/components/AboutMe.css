@@ -1,0 +1,62 @@
+/* AboutMe.css */
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: black;
+  
+}
+
+.image-container {
+  width: 40%;
+  
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 50%; /* Make the image round */
+  
+  height: 40%;
+}
+
+.content-container {
+  width: 55%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+  font-family: "opensans-semibold";
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: white;
+  font-family: "opensans-semibold";
+}
+
+
+
+@media (max-width: 768px) {
+  .about-me{
+  display: block;
+  padding: 20px;
+  background-color: black;
+  
+}
+
+.content-container {
+  width: 100%;
+}
+.image-container {
+  width: 100%;
+  
+}
+
+
+}

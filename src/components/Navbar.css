@@ -28,8 +28,6 @@ li {
   margin: 0 20px;
 }
 
-
-
 /* Apply the same styles to both button and button-link elements */
 button, .button-link {
   background: none;
@@ -54,4 +52,64 @@ button:hover, .button-link:hover {
 li:hover {
   transform: translateY(-2px);
   transition: transform 0.2s ease-in-out;
+}
+
+/* Additional styles from your previous input */
+
+.mobile-menu-toggle {
+  display: block;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  z-index: 1000; /* Ensure it's above the menu */
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.mobile-menu-toggle:hover {
+  color: #ff8c38;
+}
+
+.nav-list.mobile-menu-open {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for buttons */
+  grid-template-rows: repeat(auto-fill, minmax(60px, 1fr));
+  grid-gap: 10px; /* Adjust spacing as needed */
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 999;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.nav-list.active {
+  transform: translateY(0);
+}
+
+.nav-list li {
+  text-align: center;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list a:hover {
+  color: #ff8c38;
 }

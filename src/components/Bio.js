@@ -27,21 +27,6 @@ const Bio = () => {
   // Render your component with the fetched data
   return (
     <div className="bio">
-      <div className="section" id="education">
-        <div className='title'>
-          <h2>EDUCATION</h2>
-        </div>
-        <div className="education">
-          {resumeData.resume.education.map((education, index) => (
-            <div key={index} className="education-item">
-              <h3>{education.school}</h3>
-              <p>{education.degree}</p>
-              <p>Graduated: {education.graduated}</p>
-              <p>{education.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
 
       <div className="section" id="work">
         <div className='title'>
@@ -58,6 +43,9 @@ const Bio = () => {
           ))}
         </div>
       </div>
+
+
+      
 
       <div className="section" id="honors">
         <div className='title'>
@@ -81,6 +69,21 @@ const Bio = () => {
           {resumeData.resume.publications.map((publication, index) => (
             <div key={index} className="publication-item">
               <p>{publication.content}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="section" id="education">
+        <div className='title'>
+          <h2>EDUCATION</h2>
+        </div>
+        <div className="education">
+          {resumeData.resume.education.map((education, index) => (
+            <div key={index} className="education-item">
+              <h3>{education.school}</h3>
+              <p>{education.degree}</p>
+              <p>Graduated: {education.graduated}</p>
+              <p>{education.description}</p>
             </div>
           ))}
         </div>

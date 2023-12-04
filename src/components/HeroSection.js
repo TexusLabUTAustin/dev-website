@@ -26,7 +26,7 @@ const HeroSection = () => {
       </div>
       <div className="hero-content" id="top">
         <div className="hero-text">
-          <h1>{data.name}</h1>
+          <h2>{data.name}</h2>
           <p>{data.occupation}</p>
           <div className="social-icons">
             <a href="https://www.linkedin.com/in/texus" target="_blank">
