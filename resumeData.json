@@ -59,25 +59,7 @@
     }
 ],
     "education":[
-      {
-        "school":"North Carolina State University",
-        "degree":"PhD in Atmospheric Sciences",
-        "graduated":"2000",
-        "description":""
-      },
-      {
-        "school":"North Carolina State University",
-        "degree":"MS in Atmospheric Sciences",
-        "graduated":"1996",
-        "description":""
-      },
-
-      {
-        "school":"India",
-        "degree":"B. Engineering in Civil Engineering",
-        "graduated":"1994",
-        "description":""
-      }
+      
     ],
     "work":[
       {
