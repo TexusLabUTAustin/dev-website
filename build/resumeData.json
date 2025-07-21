@@ -1,0 +1,184 @@
+{
+  "main": {
+    "name": "Dev Niyogi",
+    "occupation": "William Stamps Farish Chair Professor in Geosciences and UNESCO Chair in AI, Water, and Cities\nDepartment of Earth and Planetary Sciences  at Jackson School of Geosciences, The University of Texas at Austin\nPI for UT Extreme Weather and Urban Sustainability (TExUSLab.org) Lab, UT-City CoLab (UTCityCoLab.org)\nAffiliate Faculty:  Maseeh Department of Civil, Architectural, and Environmental Engineering, Oden Institute of Computational Engineering and Sciences, UT Center for Space Research,  Energy, and Earth Resources  (EER) graduate program, The University of Texas at Austin (Also,  former State Climatologist and Professor Emeritus, Purdue University)"
+  },
+  "social": [
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/texus/",
+      "className": "fa fa-linkedin"
+    }
+  ],
+  "imageSrc": "public/images/Dev.jpg",
+
+  "resume":{
+    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "publications" : [
+    {
+        "content": "Patel,P., Kalyanam, R., He, L., Aliaga, D., & Niyogi, D., 2023: Deep Learning based Urban Morphology for City-scale Environmental Modeling, Proceedings of the National Academy of Sciences (PNAS) Nexus, https://doi.org/10.1093/pnasnexus/pgad027"
+    },
+    {
+        "content": "Mohanty, S., Swain, M., Nadimpalli, R., Osuri, K. K., Mohanty, U. C., Patel, P., & Niyogi, D., 2023: Meteorological Conditions of Extreme Heavy Rains over Coastal City Mumbai, Journal of Applied Meteorology and Climatology, 62(2), 191-208."
+    },
+    {
+        "content": "Cammarano, D., Jamshidi, S., Hoogenboom, G., Ruane, A.C., Niyogi, D. & Ronga, D., 2023: Processing tomato production is expected to decrease by 2050 due to the projected increase in temperature. Nature Food, 3(6), pp.437-444."
+    },
+    {
+        "content": "Busireddy, N.K.R., Ankur, K., Osuri, K.K. & Niyogi, D., 2022: Modelled impact of ocean warming on tropical cyclone size and destructiveness over the Bay of Bengal: A case study on FANI cyclone. Atmospheric Research, 279, p.106355."
+    },
+    {
+        "content": "Cao, J., Wang, H., Li, J., Tian, Q., & Niyogi, D., 2022: Improving the Forecasting of Winter Wheat Yields in Northern China with Machine Learning–Dynamical Hybrid Subseasonal-to-Seasonal Ensemble Prediction. Remote Sensing. 14, 1707."
+    },
+    {
+        "content": "Sui, X., Li, Z., Tang, G., Yang, Z.L. & Niyogi, D., 2022: Disentangling error structures of precipitation datasets using decision trees. Remote Sensing of Environment, 280, p.113185."
+    },
+    {
+        "content": "Mills, G., Stewart, I.D. & Niyogi, D., 2022: The origins of modern urban climate science: reflections on 'A numerical model of the urban heat island'. Progress in Physical Geography: Earth and Environment, 46, 649-656."
+    },
+    {
+        "content": "Zhang, X., Huang, T., Gulakhmadov, A., Song, Y., Gu, X., Zeng, J., Huang, S., Nam, W.H., Chen, N. & Niyogi, D., 2022: Deep Learning-Based 500 m Spatio-Temporally Continuous Air Temperature Generation by Fusing Multi-Source Data. Remote Sensing, 14, 3536."
+    },
+    {
+        "content": "Patel, P., Jamshidi, S., Nadimpalli, R., Aliaga, D.G., Mills, G., Chen, F., Demuzere, M. & Niyogi, D., 2022: Modeling Large‐Scale Heatwave by Incorporating Enhanced Urban Representation. Journal of Geophysical Research: Atmospheres, 127(2), p.e2021JD035316."
+    },
+    {
+        "content": "Tyagi, S., Zhang, X., Saraswat, D., Sahany, S., Mishra, S.K. & Niyogi, D., 2022. Flash Drought: Review of Concept, Prediction and the Potential for Machine Learning, Deep Learning Methods. Earth's Future, 10(11), p.e2022EF002723."
+    },
+    {
+        "content": "Kaginalkar, A., Kumar, S., Gargava, P. & Niyogi, D., 2021: Review of urban computing in air quality management as smart city service: An integrated IoT, AI, and cloud technology perspective. Urban Climate, 39, p.100972."
+    },
+    {
+        "content": "Terfa, B.K., Chen, N., Zhang, X. & Niyogi, D., 2020: Spatial configuration and extent explains the urban heat mitigation potential due to green spaces: Analysis over Addis Ababa, Ethiopia. Remote Sensing, 12, 2876."
+    },
+    {
+        "content": "Liu, J. & Niyogi, D., 2020: Identification of linkages between urban heat Island magnitude and urban rainfall modification by use of causal discovery algorithms. Urban Climate, 33, p.100659."
+    },
+    {
+        "content": "Ching, J., & coauthors including D. Niyogi, 2019: Pathway using WUDAPT's Digital Synthetic City tool towards generating urban canopy parameters for multi-scale urban atmospheric modeling. Urban Climate, 28, 100459."
+    }
+],
+    "education":[
+      {
+        "school":"North Carolina State University",
+        "degree":"PhD in Atmospheric Sciences",
+        "graduated":"2000",
+        "description":""
+      },
+      {
+        "school":"North Carolina State University",
+        "degree":"MS in Atmospheric Sciences",
+        "graduated":"1996",
+        "description":""
+      },
+
+      {
+        "school":"India",
+        "degree":"B. Engineering in Civil Engineering",
+        "graduated":"1994",
+        "description":""
+      }
+    ],
+    "work":[
+      {
+        "company":"The University of Texas at Austin",
+        "title":"Professor, Endowed Professor and then Chair Professor, Department of Geological (Earth and Planetary) Sciences, and Department of Civil, Architectural and Environmental Engineering",
+        "years":"2020 - Present",
+        "description":""
+      },
+      {
+        "company":"",
+        "title":"Affiliated Faculty, Oden Institute of Computational Science and Engineering, University of Texas, Center for Space Research, and UT Environmental Science Institute",
+        "years":"2021 - Present",
+        "description":""
+      },
+
+      {
+        "company":"Purdue University",
+        "title":"Emeritus Professor",
+        "years":"2020 - Present",
+        "description":""
+      },
+      {
+        "company":"",
+        "title":"Professor, Department of Agronomy, and Department of Earth, Atmospheric and Planetary Sciences",
+        "years":"2014 - 2020",
+        "description":""
+      },
+      {
+        "company":"",
+        "title":"State Climatologist",
+        "years":"2005 - 2018",
+        "description":""
+      },
+      {
+        "company":"",
+        "title":"Assistant and then Associate Professor with Tenure",
+        "years":"2005 - 2014",
+        "description":""
+      }
+    ],
+    "Honors": [
+      {
+        "name": "Elected Board Member, International Association of Urban Climatology (IAUC)",
+        "dates": "2018-2024"
+      },
+      {
+        "name": "Member, U.S. Department of Energy, Biological and Environmental Research Advisory Committee ",
+        "dates": "2022-"
+      },
+      {
+        "name": "Invited Committee Member of the American Meteorological Society- Board on Urban Environment (BUE; Chair from 2014-2019); Committee on Applied Climatology",
+        "dates": "2014-2019, 2020-2022"
+      },
+      {
+        "name": "Editor AMS Journal of Applied Meteorology and Climatology (JAMC), and Topic Editor Computational Urban Science",
+        "dates": ""
+      },
+      {
+        "name": "Theme Organizing Committee Member of the UT Austin Bridging Barrier Planet Texas 2050",
+        "dates": ""
+      },
+      {
+        "name": "Honorary Member, Council for Scientific Society Presidents (CSSP)",
+        "dates": "2021-"
+      },
+      {
+        "name": "Helmut E. Landsberg Award for Urban Climate from American Meteorological Society",
+        "dates": "2023"
+      },
+      {
+        "name": "William Stamps Farish Chair (2022-onwards); John “Brick” Elliott Endowed Professor (2020-22); David Carleton Professor (2020), at UT Austin",
+        "dates": ""
+      },
+      {
+        "name": "Emeritus Professor, Purdue University",
+        "dates": ""
+      },
+      {
+        "name": "Number of media interviews and media highlights including on PBS Newshour, NPR, CBS, Fox News, Wired Magazine, National Geographic, and international outlets",
+        "dates": ""
+      },
+      {
+        "name": "Indiana Governor’s Team Award for Environmental Excellence",
+        "dates": "2018"
+      },
+      {
+        "name": "TedX Talk on Eroding Differences and Similarities",
+        "dates": ""
+      },
+      {
+        "name": "USDA NIFA Partnership Award ",
+        "dates": "2015"
+      },
+      {
+        "name": "Purdue ‘Seeds for Success’ award – recognizing “Million Dollar Researchers” ",
+        "dates": ""
+      },
+      {
+        "name":"Outstanding Service plaque for 1st Agricultural Air Quality workshop – Presented by CSREES administrator at the first workshop on agricultural air quality, Maryland.",
+        "dates": "2006"
+      }
+    ]
+  }
+}
