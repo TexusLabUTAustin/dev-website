@@ -1,110 +1,206 @@
 .hero-section {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  
-
+  justify-content: flex-start;
+  padding: 2rem;
+  background: linear-gradient(135deg, #6b7fd4 0%, #8b7ba8 50%, #b08db8 100%);
 }
-
-.overlay{
-background: rgb(0,129,204);
-background: -moz-linear-gradient(90deg, rgba(0,129,204,1) 6%, rgba(0,163,204,1) 26%, rgba(0,204,190,1) 49%, rgba(72,218,208,0.9094231442577031) 53%, rgba(108,225,217,0.5256696428571428) 55%, rgba(162,235,230,0.4584427521008403) 59%, rgba(198,242,239,0.29037552521008403) 61%, rgba(252,252,252,0) 64%);
-background: -webkit-linear-gradient(90deg, rgba(0,129,204,1) 6%, rgba(0,163,204,1) 26%, rgba(0,204,190,1) 49%, rgba(72,218,208,0.9094231442577031) 53%, rgba(108,225,217,0.5256696428571428) 55%, rgba(162,235,230,0.4584427521008403) 59%, rgba(198,242,239,0.29037552521008403) 61%, rgba(252,252,252,0) 64%);
-background: linear-gradient(90deg, rgba(0,129,204,1) 6%, rgba(0,163,204,1) 26%, rgba(0,204,190,1) 49%, rgba(72,218,208,0.9094231442577031) 53%, rgba(108,225,217,0.5256696428571428) 55%, rgba(162,235,230,0.4584427521008403) 59%, rgba(198,242,239,0.29037552521008403) 61%, rgba(252,252,252,0) 64%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0081cc",endColorstr="#fcfcfc",GradientType=1);
-width: 100%;
-height: 100%;
-position: absolute;
-}
-
-.custom-linkedin-icon {
-  font-size: 4rem; /* Adjust the size as needed */
-  color: #242424;
-  padding-left: 40px;
-}
-
-.custom-linkedin-icon:hover{
-  font-size: 4rem; /* Adjust the size as needed */
-  color: #fff;
-  padding-left: 40px;
-  transition: 0.3s ease-out;
-}
-
 
 .hero-content {
+  max-width: 1200px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 20px;
+  text-align: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
 }
 
 .hero-text {
-  flex: 1;
-  color: #fff;
+  color: white;
   z-index: 2;
 }
 
 h2 {
-  font-size: 5rem;
-  margin-bottom: 20px;
-  font-family: "opensans-bold";
+  font-size: clamp(4.5rem, 5vw, 4rem);
+  margin: 0 0 1rem 0;
+  font-family: "opensans-bold", sans-serif;
+  line-height: 1.2;
+  font-weight: 700;
 }
 
- p {
-  font-size: 1.8rem;
-  font-family: "librebaskerville-regular";
+.hero-text p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+.affiliate-faculty {
+  font-size: clamp(0.8rem, 2vw, 1rem) !important;
+  font-family: "Helvetica", "Arial", sans-serif;
+  opacity: 0.8;
 }
 
 .hero-image {
-  flex: 1;
-  text-align: right;
-  position: relative; /* Add this to set the aspect ratio */
-  z-index: -1;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 0 2rem 0;
+  align-self: flex-start;
 }
 
-img {
-  max-width: 100%;
-  height: 100vh; /* Set height to 100% to maintain aspect ratio */
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-  width: auto; /* Allow width to adjust automatically */
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 768px) {
-  .hero-section{
-    height: auto;
-  }
+/* Logos section */
+.logos-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+}
 
-  .overlay{
-    display: none;
-  }
+/* Social icons container */
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin: 0;
+}
+
+.social-icons-secondary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 0;
+}
+
+.custom-linkedin-icon {
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: white;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+.custom-linkedin-icon:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+}
+
+.social-icons-secondary a {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* Primary logo icons (UNESCO and JSG) */
+.unesco-icon,
+.jsg-icon {
+  width: clamp(8rem, 18vw, 12rem);
+  height: clamp(8rem, 18vw, 12rem);
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.unesco-icon:hover,
+.jsg-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Secondary logo icons */
+.new-logo-icon,
+.colab-icon {
+  width: clamp(5rem, 8vw, 7rem);
+  height: clamp(5rem, 8vw, 7rem);
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.new-logo-icon:hover,
+.colab-icon:hover {
+  transform: scale(1.1);
+}
+
+/* UT logo container */
+.ut-logo-container {
+  margin: 0;
+  text-align: center;
+}
+
+.ut-logo-icon {
+  width: clamp(6rem, 10vw, 8rem);
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.ut-logo-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
   .hero-content {
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    text-align: left;
+    gap: 4rem;
+    margin-bottom: 4rem;
+    align-items: flex-start;
   }
-
+  
+  .hero-text {
+    flex: 1;
+  }
+  
   .hero-image {
-    order: -1; /* Move the image to the top for mobile version */
+    flex: 1;
+    max-width: 600px;
   }
-  .hero-image img{
-    height: 50vh;
+  
+  .logos-section {
     width: 100%;
+    max-width: 1200px;
   }
+}
 
-  h2 {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-    color: black;
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 1rem;
   }
-
-  .hero-text p {
-    font-size: 1.5rem;
-    color: black;
+  
+  .hero-content {
+    margin-bottom: 3rem;
   }
-
-  .custom-linkedin-icon {
-    padding-left: 20px;
+  
+  .logos-section {
+    gap: 2rem;
+  }
+  
+  .social-icons {
+    gap: 2rem;
+  }
+  
+  .social-icons-secondary {
+    gap: 2rem;
+  }
+  
+  .hero-image {
+    max-width: 300px;
   }
 }
